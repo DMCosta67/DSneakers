@@ -1,0 +1,55 @@
+footer{
+    background-color: #183168;
+    margin-top: 4%;
+    align-items: stretch;
+}
+
+.footer1{
+    display: flex;
+    align-items: center;
+}
+
+.recomenda {
+    font-size: 2rem; 
+    margin-left: 5.5%;
+    width: 15%; 
+    color: white;
+    line-height: 1.2; 
+    border-right: 1px solid white;
+    padding-right: 2%;
+}
+
+/*Lembrete: Dava pra ter 1 pros três e so dar gap*/
+.comentarios {
+    margin-top: 1%;
+    margin-left: 12%;
+    display: flex;
+    gap: 25%;
+}
+
+.comentarios > div {
+    text-align: center; 
+}
+
+.fraseNey, .fraseKeanu, .fraseMessi {
+    background-color: white; 
+    padding: 25px; /* Espaçamento interno da área de texto */
+    width: 130%;
+    border-radius: 5px; 
+    margin-bottom: -10%; 
+}
+
+.fotoNey img, .fotoKeanu img, .fotoMessi img {
+    width: 50%; 
+    height: 100%;
+    border-radius: 50%; /* Faz com que a imagem fique redonda */
+    display: block;
+    margin-left: 55%;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+.header-home{
+  width: 100%;  
+}
+
+.header-carrinho{
+  width: 127.41%; 
+}
+
+.header-perfil{
+  width: 127.41%; 
+}
+
+.top {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+  margin-left: 15%;
+}
+
+.search {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+input[type="text"] {
+  width: 40%;
+  height: 25px;
+  padding: 8px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.icons {
+    display: flex;
+    gap: 20px; 
+    margin-right: 2%;
+    align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  font-size:2rem;
+  color: white;
+}
+
+.icon:hover {
+  color: lightgray;
+}
+
+.icons {
+  display: flex;
+  gap: 250px; 
+}
+
+.Nperfil, .Ncarrinho, .Natendimento {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+}
+
+.icon:hover {
+  color: lightgray;
+}
+
+h4 {
+  margin: 0;
+  color: white;
+}
+
+/*Topo 2*/
+
+.two {
+  display: flex;
+  align-items: center;
+  background-color: #183168;
+  padding: 1px 15px;
+  color: white;
+  font-size: 115%;
+}
+.Ender {
+  margin-left: 8%;
+  border-right: 1px solid white;
+  padding-right: 4%;
+  cursor: pointer;
+} 
+
+.Categoria {
+  margin-left: 5%;
+  border-right: 1px solid white;
+  padding-right: 6%;
+  cursor: pointer;
+}
+
+.Tipo {
+  margin-left: 9%;
+  gap: 250px;
+  display: flex;
+  cursor: pointer;
+}
+
+

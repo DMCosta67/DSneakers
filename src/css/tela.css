@@ -1,0 +1,37 @@
+.figurinha {
+    text-align: center;
+    /* Poderia precisar de ajustes de posicionamento ou layout */
+}
+
+.telas {
+    min-height: 100vh;
+    overflow-y: auto;  /* Permite que o conteúdo role se ultrapassar a altura da viewport */
+}
+
+.baixoSlide{
+    display: flex;
+    gap: 20%;
+    background-color: #183168;
+    font-size: 140%;
+    min-width: 100vh;
+    
+}
+
+.parcelamento{
+    margin-left: 11%;
+    border-right: 1px solid white;
+    padding-right: 3.7%;
+}
+
+.desconto{
+    margin-left: -7.9%;
+    border-right: 1px solid white;
+    padding-right: 13.8%;
+}
+
+.seguranca{
+    margin-left: -12%;
+}
+
+
+
