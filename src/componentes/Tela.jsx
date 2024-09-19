@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SlideShow from './slide';
+import SlideShow from './Slide';
 import '../css/tela.css';
 import '../css/carrinho.css';
 import Casa from './Casa';
