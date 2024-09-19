@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 55vh;
-    width: 99.1vw;
+    width: 100vw;
     position: relative;
     object-fit: contain;
   }
@@ -44,4 +44,129 @@
   .button:hover {
     background-color: rgba(255, 255, 255, 0.8);
   }
+
+  @media screen and (max-width: 1175px) {
+    
+    .campo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45vh;
+      width: 100vw;
+      position: relative;
+      object-fit: contain;
+    }
   
+  }
+
+  @media screen and (max-width: 950px) {
+    
+    .campo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35vh;
+      width: 100vw;
+      position: relative;
+      object-fit: contain;
+    }
+  
+  }
+
+
+  /* IPAD PAIZAO */
+@media screen and (max-width: 770px) {
+
+  .campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+    object-fit: contain;
+  }
+
+}
+
+  /* IPAD ate CELULAR 1*/
+  @media screen and (max-width: 675px) {
+
+    .campo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 23vh;
+      width: 100vw;
+      position: relative;
+      object-fit: contain;
+    }
+
+  }
+
+    /* IPAD ate CELULAR 2*/
+    @media screen and (max-width: 535px) {
+
+      .campo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        width: 100vw;
+        position: relative;
+        object-fit: contain;
+      }
+
+    }
+  
+  /*celular PAIZAO*/
+  @media screen and (max-width: 430px) {
+    .campo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 18vh;
+      width: 100vw;
+      position: relative;
+      object-fit: contain;
+    }
+    
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    
+    .imgs {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+    
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-50%);
+      pointer-events: none; 
+    }
+    
+    .button {
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      pointer-events: all; 
+      transition: background-color 0.3s;
+    }
+    
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  
+  
+  }

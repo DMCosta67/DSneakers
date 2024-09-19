@@ -1,0 +1,257 @@
+.iden{
+    text-align: center;
+    color: white;
+    margin-top: 2.5%;
+}
+
+
+.loginCadastro {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: #000000;
+}
+
+.cadastro, .login {
+    width: 45%; 
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.souCadastrado, .souLogin {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;   
+}
+
+.jaSou h1, .aindaNao h1 {
+    text-align: left;
+    padding-bottom: 5px;
+    margin-bottom: -2%;
+}
+
+.emailSenha, .possuo {
+    margin-top: 20px;
+}
+
+.cadasLogin {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.botaoCadas, .botaoLogin {
+    margin-left: 2%;
+    padding: 10px 50px;
+    background-color: #40D9BF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.botaoCadas:hover, .botaoLogin:hover {
+    background-color: #33c0a9;
+}
+
+.esqueceu h3 {
+    margin-top: 10px;
+    color: #000000;
+    cursor: pointer;
+    text-align: center;
+}
+
+.esqueceu h3:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1170px) {
+
+    .iden{
+        text-align: center;
+        color: white;
+        margin-top: 2.5%;
+    }
+    
+    
+    .loginCadastro {
+        display: grid;
+        justify-content: space-around;
+        padding: 20px;
+        color: #000000;
+    }
+    
+    .cadastro, .login {
+        width: 120%; 
+        background-color: #ffffff; 
+        padding: 20px;
+        border-radius: 50px;
+        margin-left: -11.5%;
+    }
+
+    .login{
+        margin-top: 10%;
+    }
+    
+    .souCadastrado, .souLogin {
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 10px;   
+    }
+    
+    .jaSou h1, .aindaNao h1 {
+        text-align: left;
+        padding-bottom: 5px;
+        margin-bottom: -2%;
+    }
+    
+    .emailSenha, .possuo {
+        margin-top: 20px;
+    }
+    
+    .cadasLogin {
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    
+    }
+    
+    .botaoCadas, .botaoLogin {
+        margin-left: 2%;
+        padding: 10px 50px;
+        background-color: #40D9BF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    
+    .botaoCadas:hover, .botaoLogin:hover {
+        background-color: #33c0a9;
+    }
+    
+    .esqueceu h3 {
+        margin-top: 10px;
+        color: #000000;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .esqueceu h3:hover {
+        text-decoration: underline;
+    }
+    
+}
+
+/* IPAD PAIZAO */
+@media screen and (max-width: 770px) {
+
+    .iden{
+        text-align: center;
+        color: white;
+        margin-top: 2.5%;
+        font-size: 0.6rem;
+    }
+    
+    
+    .loginCadastro {
+        display: grid;
+        justify-content: space-around;
+        padding: 20px;
+        color: #000000;
+        margin-left: 15%;
+    }
+    
+    .cadastro, .login {
+        width: 100%; 
+        background-color: #ffffff; 
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+    .login{
+        margin-top: 10%;
+    }
+    
+    .souCadastrado, .souLogin {
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 10px;   
+    }
+    
+    .jaSou h1, .aindaNao h1 {
+        text-align: left;
+        padding-bottom: 5px;
+    }
+    
+    .emailSenha, .possuo {
+        margin-top: 20px;
+    }
+    
+    .cadasLogin {
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    
+    }
+    
+    .botaoCadas, .botaoLogin {
+        margin-left: 2%;
+        padding: 10px 50px;
+        background-color: #40D9BF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    
+    .botaoCadas:hover, .botaoLogin:hover {
+        background-color: #33c0a9;
+    }
+    
+    .esqueceu h3 {
+        margin-top: 10px;
+        color: #000000;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .esqueceu h3:hover {
+        text-decoration: underline;
+    }
+
+}
+
+/* Celular PAIZAO */
+@media screen and (max-width: 430px) {
+
+    .iden{
+        text-align: center;
+        color: white;
+        margin-top: 2.5%;
+        font-size: 0.55rem;
+    }
+
+    .cadastro, .login {
+        width: 80%; 
+        background-color: #ffffff; 
+        padding: 20px;
+        border-radius: 50px;
+        margin-left: -4%;
+    }
+    
+}

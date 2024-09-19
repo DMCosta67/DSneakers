@@ -3,11 +3,11 @@
 }
 
 .header-carrinho{
-  width: 127.41%; 
+  width: 100%; 
 }
 
 .header-perfil{
-  width: 127.41%; 
+  width: 100%; 
 }
 
 .top {
@@ -20,10 +20,10 @@
 }
 
 .logo {
-  height: 50px;
+  height: 40px;
   width: auto;
   cursor: pointer;
-  margin-left: 15%;
+  margin-left: 1%;
 }
 
 .search {
@@ -31,19 +31,24 @@
   margin: 0 20px;
 }
 
-input[type="text"] {
-  width: 40%;
+.barraPesquisa {
+  width: 350%;
   height: 25px;
   padding: 8px;
   border-radius: 15px;
   border: none;
   outline: none;
+  margin-left: 1%;
+}
+
+.searchContainer{
+  margin-right: 25%;
 }
 
 .icons {
     display: flex;
-    gap: 20px; 
-    margin-right: 2%;
+    gap: 10px; 
+    margin-right: 3%;
     align-items: center;
 }
 
@@ -83,6 +88,10 @@ h4 {
   color: white;
 }
 
+.lupass{
+  display: none;
+}
+
 /*Topo 2*/
 
 .two {
@@ -94,11 +103,15 @@ h4 {
   font-size: 115%;
 }
 .Ender {
-  margin-left: 8%;
+  margin-left: 4%;
   border-right: 1px solid white;
   padding-right: 4%;
   cursor: pointer;
 } 
+
+.Ender h4:hover {
+  color: lightgray;
+}
 
 .Categoria {
   margin-left: 5%;
@@ -107,11 +120,588 @@ h4 {
   cursor: pointer;
 }
 
+.Categoria h4:hover {
+  color: lightgray;
+}
+
 .Tipo {
   margin-left: 9%;
-  gap: 250px;
+  gap: 200px;
   display: flex;
   cursor: pointer;
+  font-size: 110%;
+}
+
+.casual:hover {
+  color: lightgray;
+}
+
+.esportivo:hover {
+  color: lightgray;
+}
+
+.skate:hover {
+  color: lightgray;
+}
+
+.bask:hover {
+  color: lightgray;
+}
+
+@media screen and (max-width: 1745px) {
+  .barraPesquisa {
+    width: 300%;
+    height: 25px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+  }
+
+  .Tipo {
+    margin-left: 5%;
+    gap: 150px;
+    display: flex;
+    cursor: pointer;
+    font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 1615px) {
+  .barraPesquisa {
+    width: 250%;
+    height: 25px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 1525px) {
+
+  .barraPesquisa {
+    width: 230%;
+    height: 25px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-left: 10%;
+  }
+
+  .icons {
+    display: flex;
+    gap: 150px; 
+    margin-right: 7%;
+    align-items: center;
+  }
+
 }
 
 
+@media screen and (max-width: 1270px) {
+
+  .barraPesquisa {
+    width: 200%;
+    height: 25px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+  }
+
+  .icons {
+    display: flex;
+    gap: 100px; 
+    margin-right: 2%;
+    align-items: center;
+  }
+
+  .Tipo {
+    margin-left: 4%;
+    gap: 100px;
+    display: flex;
+    cursor: pointer;
+    font-size: 110%;
+  }
+
+}
+
+@media screen and (max-width: 1040px) {
+
+  .barraPesquisa {
+    width: 200%;
+    height: 25px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-left: 30%;
+  }
+
+  .icons {
+    display: flex;
+    gap: 80px; 
+    margin-right: 1%;
+    align-items: center;
+  }
+
+  .Tipo {
+    margin-left: 4%;
+    gap: 90px;
+    display: flex;
+    cursor: pointer;
+    font-size: 110%;
+  }
+
+  .two {
+    font-size: 90%;
+  }
+
+  .Ender {
+    margin-left:2%;
+  }
+  
+  .Categoria {
+    margin-left: 3%;
+  }
+
+}
+
+@media screen and (max-width: 885px) {
+
+  .logo {
+    height: 25px;
+    width: auto;
+    cursor: pointer;
+    margin-left: 1%;
+  }
+
+  .barraPesquisa {
+    width: 150%;
+    height: 25px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-left: 10%;
+  }
+
+  .searchContainer{
+    margin-right: 20%;
+  }
+
+  .icons {
+    display: flex;
+    gap: 80px; 
+    align-items: center;
+  }
+
+}
+
+/* IPAD PAIZAO */
+@media screen and (max-width: 770px) {
+
+  .top {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+    margin-left: -3%;
+  }
+    
+  .barraPesquisa {
+    display: none;
+  }
+
+  .lupass{
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 200%;
+    cursor: pointer;
+  }
+  
+  .icons {
+      display: flex;
+      margin-right: 10%;
+      align-items: center;
+  }
+
+  .respon{
+    display: none;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size:1rem;
+    color: white;
+  }
+  
+  .icon:hover {
+    color: lightgray;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 120px; 
+  }
+  
+  .Nperfil, .Ncarrinho, .Natendimento {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .icon:hover {
+    color: lightgray;
+  }
+  
+  h4 {
+    margin: 0;
+    color: white;
+  }
+  /*Topo 2*/
+
+.two {
+  display: flex;
+  align-items: center;
+  background-color: #183168;
+  padding: 1px 15px;
+  color: white;
+  font-size: 110%;
+}
+.Ender {
+  margin-left: 3%;
+  border-right: 1px solid white;
+  padding-right: 2%;
+  cursor: pointer;
+} 
+
+.Categoria {
+  margin-left: 1%;
+  border-right: 1px solid white;
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.Tipo {
+  margin-left: 4%;
+  gap: 20px;
+  display: flex;
+  cursor: pointer;
+  font-size: 110%;
+}
+
+
+
+}
+
+/*Menos que IPAD ate celular 1 */
+@media screen and (max-width: 750px) {
+
+  .top {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+  }
+  
+  .logo {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    margin-left: -3%;
+  }
+
+  .barraPesquisa {
+    display: none;
+  }
+
+  .lupass{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    margin-left: 100%;
+    cursor: pointer;
+  }
+  
+  .icons {
+      display: flex;
+      margin-left: -7%;
+      align-items: center;
+  }
+
+  .respon{
+    display: none;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size:1rem;
+    color: white;
+  }
+  
+  .icon:hover {
+    color: lightgray;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 90px; 
+  }
+    
+  .icon {
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+  }
+  
+    
+  /*Topo 2*/
+
+.two {
+  display: flex;
+  align-items: center;
+  background-color: #183168;
+  padding: 1px 15px;
+  color: white;
+  font-size: 90%;
+}
+
+}
+
+/*Menos que IPAD ate celular 3 */
+@media screen and (max-width: 565px) {
+
+  .top {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+  }
+  
+  .logo {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    margin-left: -3%;
+  }
+
+  .barraPesquisa {
+    display: none;
+  }
+
+  .lupass{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    margin-left: 100%;
+    cursor: pointer;
+  }
+  
+  .icons {
+      display: flex;
+      margin-left: -7%;
+      align-items: center;
+  }
+
+  .respon{
+    display: none;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size:1rem;
+    color: white;
+  }
+  
+  .icon:hover {
+    color: lightgray;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 50px; 
+  }
+    
+  .icon {
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+  }
+
+
+}
+
+/*Menos que IPAD ate celular 3 */
+@media screen and (max-width: 515px) {
+
+  .two {
+    display: flex;
+    align-items: center;
+    background-color: #183168;
+    padding: 1px 15px;
+    color: white;
+    font-size: 75%;
+  }
+
+  .lupass{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    margin-left: 40%;
+    cursor: pointer;
+  }
+  
+  .icons {
+      display: flex;
+      margin-left: -12%;
+      align-items: center;
+  }
+
+  .icons {
+    display: flex;
+    gap: 40px; 
+  }
+  
+
+}
+
+/* CELULAR PAIZAO */
+@media screen and (max-width: 430px) {
+
+  .top {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+  }
+  
+  .logo {
+    height: 25px;
+    width: auto;
+    cursor: pointer;
+    margin-left: -8%;
+  }
+    
+  .barraPesquisa {
+    display: none;
+  }
+
+  .lupass{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    margin-left: 60%;
+    cursor: pointer;
+  }
+  
+  .icons {
+      display: flex;
+      margin-left: -7%;
+      align-items: center;
+  }
+
+  .respon{
+    display: none;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size:1rem;
+    color: white;
+  }
+  
+  .icon:hover {
+    color: lightgray;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 40px; 
+  }
+  
+  .Nperfil, .Ncarrinho, .Natendimento {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .icon:hover {
+    color: lightgray;
+  }
+  
+  h4 {
+    margin: 0;
+    color: white;
+  }
+  /*Topo 2*/
+
+.two {
+  display: flex;
+  align-items: center;
+  background-color: #183168;
+  padding: 1px 15px;
+  color: white;
+  font-size: 75%;
+}
+.Ender {
+  margin-left: 2%;
+  border-right: 1px solid white;
+  padding-right: 2%;
+  cursor: pointer;
+} 
+
+.Ender h4:hover {
+  color: lightgray;
+}
+
+.Categoria {
+  margin-left: 2%;
+  border-right: 1px solid white;
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.Categoria h4:hover {
+  color: lightgray;
+}
+
+.Tipo {
+  margin-left: 2%;
+  gap: 20px;
+  display: flex;
+  cursor: pointer;
+  font-size: 110%;
+}
+
+}
+    

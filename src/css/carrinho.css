@@ -1,0 +1,104 @@
+.comprass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+}
+
+.produtoss h1 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.botao23 {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #40D9BF;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+.botao23:hover {
+    background-color: #36bba5;
+}
+
+/* IPAD PAIZAO */
+@media screen and (max-width: 770px) {
+    .comprass {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 50vh;
+        padding: 20px; 
+        margin-top: -10%;
+    }
+    
+    .produtoss {
+        max-width: 100%; 
+    }
+
+    .produtoss h1 {
+        font-size: 3rem; 
+        color: #ffffff;
+        overflow-wrap: break-word; 
+        word-break: break-word;
+        max-width: 100%;
+    }
+    
+    .botao23 {
+        padding: 10px 20px;
+        font-size: 1.4rem;
+        color: rgb(255, 255, 255);
+        background-color: #40D9BF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px; 
+        margin-top: 6%;       
+    }
+}
+
+/* Celular PAIZAO */
+@media screen and (max-width: 430px) {
+
+    .comprass {
+        margin-top: -15%;
+    }
+
+    .produtoss {
+        max-width: 80%; 
+        margin-left: 0%;
+    }
+
+    .produtoss h1 {
+        font-size: 2rem; 
+        color: #ffffff;
+        overflow-wrap: break-word; 
+        word-break: break-word;
+        max-width: 100%;
+    }
+    
+    .botao23 {
+        padding: 10px 20px;
+        font-size: 1.4rem;
+        color: rgb(255, 255, 255);
+        background-color: #40D9BF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 0%;
+        
+    }
+
+}
+

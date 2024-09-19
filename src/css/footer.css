@@ -1,5 +1,4 @@
 footer{
-    background-color: #183168;
     margin-top: 4%;
     align-items: stretch;
 }
@@ -7,11 +6,12 @@ footer{
 .footer1{
     display: flex;
     align-items: center;
+    background-color: #183168;
 }
 
 .recomenda {
     font-size: 2rem; 
-    margin-left: 5.5%;
+    margin-left: 3%;
     width: 15%; 
     color: white;
     line-height: 1.2; 
@@ -19,10 +19,9 @@ footer{
     padding-right: 2%;
 }
 
-/*Lembrete: Dava pra ter 1 pros três e so dar gap*/
 .comentarios {
     margin-top: 1%;
-    margin-left: 12%;
+    margin-left: 6.5%;
     display: flex;
     gap: 25%;
 }
@@ -33,7 +32,7 @@ footer{
 
 .fraseNey, .fraseKeanu, .fraseMessi {
     background-color: white; 
-    padding: 25px; /* Espaçamento interno da área de texto */
+    padding: 25px; 
     width: 130%;
     border-radius: 5px; 
     margin-bottom: -10%; 
@@ -42,14 +41,860 @@ footer{
 .fotoNey img, .fotoKeanu img, .fotoMessi img {
     width: 50%; 
     height: 100%;
-    border-radius: 50%; /* Faz com que a imagem fique redonda */
+    border-radius: 50%; 
     display: block;
     margin-left: 55%;
 }
 
+/*footer 2*/
+
+.footer2 {
+    background-color: white;
+    border: 2px solid black;  
+    padding: 0.5%; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+  
+.borda {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0;  
+    box-sizing: border-box;
+    flex-wrap: wrap; 
+    overflow: hidden;
+}
+
+.teste{
+    display: flex;
+}
+
+.respoFirst, .respoSecond {
+    display: flex; 
+    justify-content: space-between; 
+    flex: 1; 
+}
+
+.horarios, .forma, .contato, .wpp, .redes {
+    border-right: 1px solid black;
+    padding: 5px;
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1rem; 
+}
+
+.redes {
+    border-right: none;
+}
+
+.formas img {
+    max-width: 200px; 
+    height: auto;     
+    display: block;   
+    margin: 0 auto; 
+}
+
+.reloDias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    margin-right: 10px;  
+}
+
+.dias h2{
+    margin: 0%;
+    font-size: 1.2rem;
+    margin-top: 3%;
+}
+
+.email, .whats, .face, .insta {
+    margin: 0;
+    font-size: 0.8rem; 
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.face{
+    margin-left: -12%;
+}
+
+.email{
+    margin-top: 6%;
+}
 
 
+@media screen and (max-width: 1730px) {
+    footer{
+        margin-top: 4%;
+        align-items: stretch;
+    }
+    
+    .footer1{
+        display: flex;
+        align-items: center;
+        background-color: #183168;
+    }
+    
+    .recomenda {
+        font-size: 1.5rem; 
+        margin-left: 3.5%;
+        width: 15%; 
+        color: white;
+        line-height: 1.2; 
+        border-right: 1px solid white;
+        padding-right: 0%;
+    }
+    
+    .comentarios {
+        margin-top: 1%;
+        margin-left: 3%;
+        display: flex;
+        gap: 25%;
+    }
+    
+    .comentarios > div {
+        text-align: center; 
+    }
+    
+    .fraseNey, .fraseKeanu, .fraseMessi {
+        background-color: white; 
+        padding: 25px; 
+        width: 130%;
+        border-radius: 5px; 
+        margin-bottom: -10%; 
+    }
+    
+    .fotoNey img, .fotoKeanu img, .fotoMessi img {
+        width: 50%; 
+        height: 100%;
+        border-radius: 50%; 
+        display: block;
+        margin-left: 55%;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    footer{
+        margin-top: 4%;
+        align-items: stretch;
+        width: 104%;
+    }
+    
+    .comentarios {
+        margin-top: 1%;
+        margin-left: 18%;
+        display: flex;
+        gap: 25%;
+    }
+    
+    .comentarios > div {
+        text-align: center; 
+    }
+
+    .fraseNey, .fraseKeanu{
+        background-color: white; 
+        padding: 25px; 
+        width: 130%;
+        border-radius: 5px; 
+        margin-bottom: -10%; 
+    }
+    
+    .fotoNey img, .fotoKeanu img {
+        width: 50%; 
+        height: 100%;
+        border-radius: 50%; 
+        display: block;
+        margin-left: 55%;
+    }
+
+    .fotoMessi img, .fraseMessi {
+        display: none;
+    }
+    
+    /*footer 2*/
+
+    .footer2 {
+        background-color: white;
+        border: 1px solid black;  
+        padding: 1%; 
+        width: 100%; 
+        box-sizing: border-box; 
+        margin-left: -2%;
+      }
+            
+      .teste {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      .respoFirst, .respoSecond {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1px; 
+        margin-top: 1%;
+      }
+
+      .respoFirst{
+        border-bottom: 1px solid black;
+      }
+
+      .respoSecond{
+        margin-top: -1%;
+      }
+      
+      .horarios, .forma, .contato, .wpp, .redes {
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 0.7rem;
+        flex: 1; 
+      }
+
+      .forma{
+        border: none;
+      }
+      
+      .formas img {
+        max-width: 160px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      
+      .dias h2, .email, .whats, .face, .insta {
+        margin: 0;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .dias h2 {
+        font-size: 0.9rem;
+      }
+      
+      .face, .insta {
+        margin-top: 1%;
+        margin-left: auto;
+      }
+
+}
 
 
+@media screen and (max-width: 1450px) {
+    footer{
+        margin-top: 4%;
+        align-items: stretch;
+        width: 104%;
+    }
+
+    .recomenda {
+        font-size: 1.4rem; 
+        margin-left: 3.5%;
+        width: 15%; 
+        color: white;
+        line-height: 1.2; 
+        border-right: 1px solid white;
+        padding-right: 2%;
+    }
+    
+    .comentarios {
+        margin-top: 1%;
+        margin-left: 15%;
+        display: flex;
+        gap: 25%;
+    }
+    
+    .comentarios > div {
+        text-align: center; 
+    }
+
+    .fraseNey, .fraseKeanu{
+        background-color: white; 
+        padding: 25px; 
+        width: 130%;
+        border-radius: 5px; 
+        margin-bottom: -10%; 
+    }
+    
+    .fotoNey img, .fotoKeanu img {
+        width: 50%; 
+        height: 100%;
+        border-radius: 50%; 
+        display: block;
+        margin-left: 55%;
+    }
+
+    .fotoMessi img, .fraseMessi {
+        display: none;
+    }
+
+    /*footer 2*/
+
+    .footer2 {
+        background-color: white;
+        border: 1px solid black;  
+        padding: 1%; 
+        width: 100%; 
+        box-sizing: border-box; 
+        margin-left: -2%;
+      }
+
+            
+      .teste {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      .respoFirst, .respoSecond {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1px; 
+        margin-top: 1%;
+      }
+
+      .respoFirst{
+        border-bottom: 1px solid black;
+      }
+
+      .respoSecond{
+        margin-top: -1%;
+      }
+      
+      .horarios, .forma, .contato, .wpp, .redes {
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 0.7rem;
+        flex: 1; 
+      }
+
+      .forma{
+        border: none;
+      }
+      
+      .formas img {
+        max-width: 160px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      
+      .dias h2, .email, .whats, .face, .insta {
+        margin: 0;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .dias h2 {
+        font-size: 0.9rem;
+      }
+      
+      .face, .insta {
+        margin-top: 1%;
+        margin-left: auto;
+      }
+  
+}
 
 
+@media screen and (max-width: 1075px) {
+
+    footer{
+        margin-top: 5%;
+        align-items: stretch;
+    }
+    
+    .footer1{
+        display: flex;
+        align-items: center;
+        background-color: #183168;
+    }
+    
+    .recomenda {
+        font-size: 1rem; 
+        margin-left: 1%;
+        width: 15%; 
+        color: white;
+        line-height: 1.2; 
+        border-right: 1px solid white;
+        padding: 6%;
+    }
+    
+    .comentarios {
+        margin-top: 1%;
+        margin-left: 15%;
+        display: flex;
+        gap: 10%;
+    }
+    
+    .comentarios > div {
+        text-align: center; 
+    }
+    
+    .fraseNey {
+        background-color: white; 
+        padding: 15px; 
+        width: 80%;
+        border-radius: 5px;
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+
+    .fraseKeanu, .fraseMessi{
+        display: none;
+    }
+    
+    .fotoNey img {
+        width: 25%; 
+        height: 100%;
+        border-radius: 50%; 
+        display: block;
+        margin-left: 45%;
+        margin-top: 6%;
+    }
+
+    .fotoKeanu img, .fotoMessi img{
+        display: none;
+    }
+
+    /*footer 2*/
+
+    .footer2 {
+        background-color: white;
+        border: 1px solid black;  
+        padding: 5%; 
+        width: 100%; 
+        box-sizing: border-box; 
+        margin-left: -2%;
+      }
+            
+      .teste {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      .respoFirst, .respoSecond {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1px; 
+        margin-top: 1%;
+      }
+
+      .respoFirst{
+        border-bottom: 1px solid black;
+      }
+
+      .respoSecond{
+        margin-top: -1%;
+      }
+      
+      .horarios, .forma, .contato, .wpp, .redes {
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 0.7rem;
+        flex: 1; 
+      }
+
+      .forma{
+        border: none;
+      }
+      
+      .formas img {
+        max-width: 100px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      
+      .dias h2, .email, .whats, .face, .insta {
+        margin: 0;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .dias h2 {
+        font-size: 0.9rem;
+      }
+      
+      .face, .insta {
+        margin-top: 1%;
+        margin-left: auto;
+      }
+
+}
+
+/*IPAD PAIZAO*/
+@media screen and (max-width: 770px) {
+
+    footer{
+        margin-top: 5%;
+        align-items: stretch;
+    }
+    
+    .footer1{
+        display: flex;
+        align-items: center;
+        background-color: #183168;
+    }
+    
+    .recomenda {
+        font-size: 0.8rem; 
+        margin-left: 1%;
+        width: 15%; 
+        color: white;
+        line-height: 1.2; 
+        border-right: 1px solid white;
+        padding: 6%;
+    }
+    
+    .comentarios {
+        margin-top: 1%;
+        margin-left: 15%;
+        display: flex;
+        gap: 10%;
+    }
+    
+    .comentarios > div {
+        text-align: center; 
+    }
+    
+    .fraseNey {
+        background-color: white; 
+        padding: 15px; 
+        width: 80%;
+        border-radius: 5px;
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+
+    .fraseKeanu, .fraseMessi{
+        display: none;
+    }
+    
+    .fotoNey img {
+        width: 25%; 
+        height: 100%;
+        border-radius: 50%; 
+        display: block;
+        margin-left: 45%;
+        margin-top: 6%;
+    }
+
+    .fotoKeanu img, .fotoMessi img{
+        display: none;
+    }
+
+    /*footer 2*/
+
+    .footer2 {
+        background-color: white;
+        border: 1px solid black;  
+        padding: 5%; 
+        width: 100%; 
+        box-sizing: border-box; 
+        margin-left: -2%;
+      }
+            
+      .teste {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      .respoFirst, .respoSecond {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1px; 
+        margin-top: 1%;
+      }
+
+      .respoFirst{
+        border-bottom: 1px solid black;
+      }
+
+      .respoSecond{
+        margin-top: -1%;
+      }
+      
+      .horarios, .forma, .contato, .wpp, .redes {
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 0.7rem;
+        flex: 1; 
+      }
+
+      .forma{
+        border: none;
+      }
+      
+      .formas img {
+        max-width: 100px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      
+      .dias h2, .email, .whats, .face, .insta {
+        margin: 0;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .dias h2 {
+        font-size: 0.9rem;
+      }
+      
+      .face, .insta {
+        margin-top: 1%;
+        margin-left: auto;
+      }
+    }      
+
+    /*IPAD ate CElULAR*/
+@media screen and (max-width: 690px) {
+
+    .duvida{
+        font-size: 0.5rem;
+    }
+
+
+}
+
+    /*IPAD ate CElULAR 2*/
+@media screen and (max-width: 578px) {
+
+    .footer2 {
+        background-color: white;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: -1%;
+    }
+
+    .recomenda {
+        font-size: 0.7rem; 
+        margin-left: 1%;
+        width: 20%; 
+        color: white;
+        line-height: 1.2; 
+        border-right: 1px solid white;
+        padding: 6%;
+    }
+
+    .borda {
+        display: flex;
+        flex-direction: column; 
+        justify-content: start; 
+    }
+
+    .teste {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .respoFirst {
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+        padding-bottom: 10px; 
+        border-bottom: 1px solid #000; 
+    }
+
+    .respoSecond {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .horarios, .forma {
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .contato, .wpp, .redes {
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .formas img {
+        max-width: 130px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .dias h2, .email, .whats, .face, .insta {
+        margin: 0;
+        font-size: 0.6rem;
+        font-weight: 500;
+        display: flex;
+    }
+
+    .duvida{
+        font-size: 0.4rem;
+    }
+
+}
+
+
+/*CELULAR PAIZAO*/
+@media screen and (max-width: 430px) {
+
+    footer{
+        margin-top: 5%;
+        align-items: stretch;
+    }
+    
+    .footer1{
+        display: flex;
+        align-items: center;
+        background-color: #183168;
+    }
+    
+    .recomenda {
+        font-size: 0.7rem; 
+        margin-left: 1%;
+        width: 20%; 
+        color: white;
+        line-height: 1.2; 
+        border-right: 1px solid white;
+        padding: 6%;
+    }
+    
+    .comentarios {
+        margin-top: 1%;
+        margin-left: -1%;
+        display: flex;
+        gap: 1%;
+    }
+    
+    .comentarios > div {
+        text-align: center; 
+    }
+    
+    .fraseNey {
+        background-color: white; 
+        padding: 10px; 
+        width: 50%;
+        border-radius: 5px; 
+        margin-bottom: -10%; 
+        margin-left: 23%;
+        margin-top: 4%;
+    }
+
+    .fraseKeanu, .fraseMessi{
+        display: none;
+    }
+    
+    .fotoNey img {
+        width: 25%; 
+        height: 100%;
+        border-radius: 50%; 
+        display: block;
+        margin-left: 40%;
+        margin-top: 6%;
+    }
+
+    .fotoKeanu img, .fotoMessi img{
+        display: none;
+    }
+
+    /*footer 2*/
+
+    .footer2 {
+        background-color: white;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: -1%;
+    }
+
+    .borda {
+        display: flex;
+        flex-direction: column; 
+        justify-content: start; 
+    }
+
+    .teste {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .respoFirst {
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+        padding-bottom: 10px; 
+        border-bottom: 1px solid #000; 
+    }
+
+    .respoSecond {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .horarios, .forma {
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .contato, .wpp, .redes {
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .formas img {
+        max-width: 130px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .dias h2, .email, .whats, .face, .insta {
+        margin: 0;
+        font-size: 0.6rem;
+        font-weight: 500;
+        display: flex;
+    }
+
+    .duvida{
+        font-size: 0.4rem;
+    }
+}
