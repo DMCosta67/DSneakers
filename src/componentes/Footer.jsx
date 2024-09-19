@@ -107,12 +107,12 @@ function Footer() {
               <h1>Instagram e Facebook:</h1>
             </div>
             <div className="face">
-            <a href="https://www.facebook.com/DSeakers"  rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=100004652111911"  rel="noopener noreferrer">
               <h2><FaFacebookSquare /> DSeakers</h2>
              </a> 
             </div>
             <div className="insta">
-            <a href="https://www.instagram.com/DSneakers_ofc"  rel="noopener noreferrer">
+            <a href="https://www.instagram.com/dn_cost67/"  rel="noopener noreferrer">
               <h2><FaInstagram/> DSneakers_ofc</h2>
             </a>
             </div>
