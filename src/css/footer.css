@@ -898,3 +898,149 @@ footer{
         font-size: 0.4rem;
     }
 }
+
+@media screen and (max-width: 405px) {
+
+    .face, .insta{
+        font-size: 0.5rem;
+    }
+
+    .duvida{
+        font-size: 0.4rem;
+    }
+    .whats{
+        font-size: 0.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+
+    footer{
+        margin-top: 5%;
+        align-items: stretch;
+    }
+    
+    .footer1{
+        display: flex;
+        align-items: center;
+        background-color: #183168;
+    }
+    
+    .recomenda {
+        font-size: 0.5rem; 
+        margin-left: 1%;
+        width: 20%; 
+        color: white;
+        line-height: 1.2; 
+        border-right: 1px solid white;
+        padding: 6%;
+    }
+    
+    .comentarios {
+        margin-top: 1%;
+        margin-left: -1%;
+        display: flex;
+        gap: 1%;
+    }
+    
+    .comentarios > div {
+        text-align: center; 
+    }
+    
+    .fraseNey {
+        background-color: white; 
+        padding: 10px; 
+        width: 50%;
+        border-radius: 5px; 
+        margin-bottom: -10%; 
+        margin-left: 23%;
+        margin-top: 4%;
+        font-size: 0.5rem;
+    }
+ 
+    .fotoNey img {
+        width: 15%; 
+        height: 100%;
+        border-radius: 50%; 
+        display: block;
+        margin-left: 45%;
+        margin-top: 8%;
+    }
+
+    /*footer 2*/
+
+    .footer2 {
+        background-color: white;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: -1%;
+    }
+
+    .borda {
+        display: flex;
+        flex-direction: column; 
+        justify-content: start; 
+    }
+
+    .teste {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .respoFirst {
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+        padding-bottom: 10px; 
+        border-bottom: 1px solid #000; 
+    }
+
+    .respoSecond {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .horarios, .forma {
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 0.4rem;
+    }
+
+    .contato, .wpp, .redes {
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 0.4rem;
+    }
+
+    .formas img {
+        max-width: 130px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .dias h2, .email, .whats, .face, .insta {
+        margin: 0;
+        font-size: 0.4rem;
+        font-weight: 500;
+        display: flex;
+    }
+
+    .dias h2{
+        font-size: 0.6rem;
+    }
+
+    .relogio{
+        display: none;
+    }
+
+    .duvida{
+        font-size: 0.4rem;
+    }
+
+}

@@ -491,4 +491,70 @@
 
 }
 
+@media screen and (max-width: 415px) {
+
+    .baixoSlide{
+        display: flex;
+        gap: 5%;
+        background-color: #183168;
+        font-size: 60%;
+        min-width: 100vh;
+        
+    }
+
+    .parcelamento{
+        margin-left: 4%;
+        margin-right: 10%;
+        border-right: 1px solid white;
+        padding-right:2%;
+    }
+    
+    .seguranca{
+        margin-left: -12%;
+        margin-right: 20%;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .baixoSlide{
+        display: flex;
+        gap: 5%;
+        background-color: #183168;
+        font-size: 55%;
+        min-width: 100vh;
+        
+    }
+
+    .parcelamento{
+        margin-left: 3.7%;
+        margin-right: 10%;
+        border-right: 1px solid white;
+        padding-right:2%;
+    }
+    
+    .seguranca{
+        margin-left: -13%;
+        margin-right: 20%;
+    }
+
+}
+
+@media screen and (max-width: 325px) {
+
+    .parcelamento{
+        margin-left: 2.8%;
+        margin-right: 10%;
+        border-right: 1px solid white;
+        padding-right:1%;
+    }
+
+    .seguranca{
+        margin-left: -14%;
+        margin-right: 20%;
+    }
+
+}
+
 
