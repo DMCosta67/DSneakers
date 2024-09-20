@@ -858,7 +858,18 @@ h4 {
 
 }
 
-/* CELULAR 14 PRO MAX */
+@media screen and (max-width: 360px) {
+
+  .icons {
+    display: flex;
+    margin-left: -10%;
+    margin-right: 5%;
+    align-items: center;
+}
+
+}
+
+
 @media screen and (max-width: 345px) {
 
   .logo {
