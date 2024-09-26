@@ -721,8 +721,7 @@ h4 {
   
   .icons {
       display: flex;
-      margin-left: -12%;
-      margin-right: 8%;
+      margin-right: -3%;
       align-items: center;
   }
 
@@ -818,8 +817,7 @@ h4 {
   
   .icons {
       display: flex;
-      margin-left: -12%;
-      margin-right: 5%;
+      margin-right: -2%;
       align-items: center;
   }
 
@@ -850,18 +848,6 @@ h4 {
 
 }
 
-@media screen and (max-width: 360px) {
-
-  .icons {
-    display: flex;
-    margin-left: -10%;
-    margin-right: 5%;
-    align-items: center;
-}
-
-}
-
-
 @media screen and (max-width: 345px) {
 
   .logo {
@@ -883,12 +869,7 @@ h4 {
     cursor: pointer;
   }
   
-  .icons {
-      display: flex;
-      margin-left: -12%;
-      margin-right: 5%;
-      align-items: center;
-  }
+
 
   .respon{
     display: none;
