@@ -78,4 +78,13 @@
   .popupContent button:hover {
     background-color: rgb(182, 65, 57);
   }
+
+  .frete p{
+    font-size: 110%;
+    font-weight: 500;
+  }
+
+  .valorFrete{
+    color: #32a390;
+  }
   

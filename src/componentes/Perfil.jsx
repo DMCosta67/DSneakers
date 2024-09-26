@@ -5,9 +5,23 @@ import { IoMdPerson, IoMdPersonAdd } from "react-icons/io";
 import { FaLock } from "react-icons/fa";
 
 function Perfil() {
+
+  //Email ja preenchido no pop-up
+  const [emails, setEmails] = useState ('');
+
+  const handleEmailChange = (e) => { 
+    setEmails(e.target.value);
+  };
+
+  //abre pop up
   const [isPopupVisible, setPopupVisible] = useState(false);
 
   const handleButtonClick = () => {
+    if (!emails) {
+      alert("O campo de e-mail é obrigatório!");
+      return;
+    }
+
     setPopupVisible(true);
   };
 
@@ -68,8 +82,10 @@ function Perfil() {
             </div>
 
             <div className="inputss">
-              <input type="text" className="cadasLogin" />
+              <label>
+              <input type="text" className="cadasLogin" onChange={handleEmailChange} required/>
               <input type="button" value="Cadastrar" className="botaoLogin" onClick={handleButtonClick} />
+              </label>
             </div>
           </div>
         </div>
@@ -86,15 +102,11 @@ function Perfil() {
               </label>
               <label>
                 E-mail:
-                <input type="email" name="email" required/>
+                <input type="email" name="email" value={emails} readOnly required/>
               </label>
               <label>
                 Senha:
                 <input type="password" name="senha" required/>
-              </label>
-              <label>
-                Confirmar Senha:
-                <input type="password" name="confirmarSenha" required/>
               </label>
               <label>
                 Ano de Nascimento:
