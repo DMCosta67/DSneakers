@@ -75,10 +75,15 @@ function Topo() {
                         placeholder="Pesquisar..." 
                         className="barraPesquisa"
                         />
-                        <FaSearch className="lupass" />
                     </div>
 
                     <div className="icons">
+
+                        <div className="Npesquisas">
+                            <FaSearch className="lupass"/>
+                        </div>
+
+
                         <div className="Nperfil">
                             <IoPersonSharp className="icon perfil" onClick={mudarParaPerfil} />
                             <h4 className="respon">Perfil</h4>

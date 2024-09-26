@@ -97,7 +97,7 @@ function Footer() {
             </div>
             <div className="whats">
               <a href="https://wa.me/5511960726769" target="_blank" rel="noopener noreferrer">
-              <h2><FaWhatsapp size={25}/> 11 96072-6769</h2>
+              <h2><FaWhatsapp size={18}/> 11 96072-6769</h2>
               </a>
             </div>
           </div>

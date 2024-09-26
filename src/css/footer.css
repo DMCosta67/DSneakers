@@ -410,6 +410,10 @@ footer{
         margin-top: 1%;
         margin-left: auto;
       }
+
+      .duvida{
+        font-size: 0.6rem;
+      }
   
 }
 
@@ -545,6 +549,20 @@ footer{
         margin-left: auto;
       }
 
+      .duvida{
+        font-size: 0.5rem;
+      }
+
+}
+
+@media screen and (max-width: 847px) {
+    .contato, .email{
+        font-size: 0.6rem;
+    }
+
+    .duvida{
+        font-size: 0.6rem;
+      }
 }
 
 /*IPAD PAIZAO*/
@@ -644,7 +662,7 @@ footer{
         margin-top: -1%;
       }
       
-      .horarios, .forma, .contato, .wpp, .redes {
+      .horarios, .forma, .wpp, .redes {
         padding: 10px;
         box-sizing: border-box;
         text-align: center;
@@ -681,12 +699,15 @@ footer{
     }      
 
     /*IPAD ate CElULAR*/
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 620px) {
 
-    .duvida{
-        font-size: 0.5rem;
-    }
-
+        .contato, .email{
+            font-size: 0.5rem;
+        }
+    
+        .duvida{
+            font-size: 0.5rem;
+          }
 
 }
 
@@ -763,9 +784,17 @@ footer{
         display: flex;
     }
 
-    .duvida{
+    .contato, .email{
         font-size: 0.4rem;
     }
+
+    .duvida{
+        font-size: 0.4rem;
+      }
+
+    .whats{
+        font-size: 0.5rem;
+      }
 
 }
 

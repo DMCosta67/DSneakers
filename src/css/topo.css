@@ -42,7 +42,7 @@
 }
 
 .searchContainer{
-  margin-right: 25%;
+  margin-right: 10%;
 }
 
 .icons {
@@ -203,12 +203,16 @@ h4 {
 @media screen and (max-width: 1270px) {
 
   .barraPesquisa {
-    width: 200%;
+    width: 170%;
     height: 25px;
     padding: 8px;
     border-radius: 15px;
     border: none;
     outline: none;
+  }
+
+  .searchContainer{
+    margin-right: 14%;
   }
 
   .icons {
@@ -231,13 +235,16 @@ h4 {
 @media screen and (max-width: 1040px) {
 
   .barraPesquisa {
-    width: 200%;
+    width: 160%;
     height: 25px;
     padding: 8px;
     border-radius: 15px;
     border: none;
     outline: none;
-    margin-left: 30%;
+  }
+
+  .searchContainer{
+    margin-right: 8%;
   }
 
   .icons {
@@ -276,20 +283,6 @@ h4 {
     width: auto;
     cursor: pointer;
     margin-left: 1%;
-  }
-
-  .barraPesquisa {
-    width: 150%;
-    height: 25px;
-    padding: 8px;
-    border-radius: 15px;
-    border: none;
-    outline: none;
-    margin-left: 10%;
-  }
-
-  .searchContainer{
-    margin-right: 20%;
   }
 
   .icons {
@@ -333,7 +326,6 @@ h4 {
   
   .icons {
       display: flex;
-      margin-right: 10%;
       align-items: center;
   }
 
@@ -353,10 +345,10 @@ h4 {
   
   .icons {
     display: flex;
-    gap: 120px; 
+    gap: 90px; 
   }
   
-  .Nperfil, .Ncarrinho, .Natendimento {
+  .Nperfil, .Ncarrinho, .Natendimento, .Npesquisas {
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -445,7 +437,7 @@ h4 {
   
   .icons {
       display: flex;
-      margin-left: -7%;
+      margin-left: -10%;
       align-items: center;
   }
 
@@ -489,7 +481,7 @@ h4 {
 }
 
 /*Menos que IPAD ate celular 3 */
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 585px) {
 
   .top {
     position: sticky;
