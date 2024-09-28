@@ -56,6 +56,14 @@ function Topo() {
         }
     };
 
+    //barra de pesquisa responsivo
+
+    const [isModalVisible, setModalVisible] = useState(false);
+
+    const toggleModal = () => {
+        setModalVisible(!isModalVisible);
+    };
+
     return (
         <>
             <header className={
@@ -79,10 +87,19 @@ function Topo() {
 
                     <div className="icons">
 
-                        <div className="Npesquisas">
-                            <FaSearch className="lupass"/>
-                        </div>
-
+                    {/*Barra de pesquisa responsivo*/}
+                    <div className="Npesquisas">
+                        <FaSearch className="lupass" onClick={toggleModal} />
+                    {isModalVisible && (
+                    <div className="searchModal">
+                        <div className="searchModalContent">
+                        <input type="text" className="searchInput" placeholder="Pesquisar..."/>
+                        <button className="fecharPesquisa" onClick={toggleModal}>Fechar</button>
+                    </div>
+                    <div className="modalOverlay" onClick={toggleModal}></div>
+                    </div>
+                    )}
+                    </div>
 
                         <div className="Nperfil">
                             <IoPersonSharp className="icon perfil" onClick={mudarParaPerfil} />
