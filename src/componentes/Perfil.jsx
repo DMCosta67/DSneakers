@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import '../css/perfil.css';
 import '../css/pop.css';
+import '../css/cadas.css';
 import { IoMdPerson, IoMdPersonAdd } from "react-icons/io";
 import { FaLock } from "react-icons/fa";
 
 function Perfil() {
   const [secaoAtual, setSecaoAtual] = useState('identifica');
-  const [email, setEmail] = useState(''); // 'email'  login
+  const [emails, setEmails] = useState('');
+  const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
-  const [emails, setEmails] = useState(''); // 'emails' cadastro
   const [isPopupVisible, setPopupVisible] = useState(false);
+  const [cadastroConfirmado, setCadastroConfirmado] = useState(false); 
 
   const cliqueSecao = () => {
     setSecaoAtual('identifica');
@@ -28,14 +30,14 @@ function Perfil() {
     setSecaoAtual('logado');
   };
 
-  const handleEmailChange = (e) => {
+  const handleEmailsChange = (e) => {
     setEmail(e.target.value);
   };
 
-  const handleEmailsChange = (e) => {
+  const handleEmailChange = (e) => {
     setEmails(e.target.value);
   };
-
+  
   const handleSenhaChange = (e) => {
     setSenha(e.target.value);
   };
@@ -50,6 +52,12 @@ function Perfil() {
 
   const handleClosePopup = () => {
     setPopupVisible(false);
+    setCadastroConfirmado(false); 
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    setCadastroConfirmado(true); 
   };
 
   return (
@@ -77,7 +85,7 @@ function Perfil() {
               <div className="emailSenha">
                 <div className="email2">
                   <h2>E-mail:</h2>
-                  <input type="text" className="cadasLogin" value={email} onChange={handleEmailChange} required />
+                  <input type="text" className="cadasLogin" value={email} onChange={handleEmailsChange} required />
                 </div>
 
                 <div className="senha">
@@ -106,52 +114,61 @@ function Perfil() {
 
                 <div className="inputss">
                   <label>
-                    <input type="text" className="cadasLogin" onChange={handleEmailsChange} required />
+                    <input type="text" className="cadasLogin" onChange={handleEmailChange} required />
                     <input type="button" value="Cadastrar" className="botaoLogin" onClick={handleButtonClick} />
                   </label>
                 </div>
               </div>
             </div>
-            </div>
+          </div>
 
-{isPopupVisible && (
-  <div className="popup">
-    <div className="popupContent">
-      <h3>Cadastrar E-mail:</h3>
-      <form className="formCadastro">
-        <label>
-          Nome Completo:
-          <input type="text" name="nomeCompleto" required />
-        </label>
-        <label>
-          E-mail:
-          <input type="email" name="email" value={emails} readOnly required />
-        </label>
-        <label>
-          Senha:
-          <input type="password" name="senha" required />
-        </label>
-        <label>
-          Ano de Nascimento:
-          <input type="text" name="anoNascimento" required />
-        </label>
-        <label>
-          CPF:
-          <input type="text" name="cpf" />
-        </label>
-        <label>
-          Celular:
-          <input type="text" name="celular" required />
-        </label>
-        <input type="submit" value="Cadastrar" />
-      </form>
-      <button onClick={handleClosePopup}>Fechar</button>
-    </div>
-  </div>
-)}
-</div>
-)}
-        {secaoAtual === 'logado' && (
+          {/* Popup para Cadastro */}
+          {isPopupVisible && (
+            <div className="popup">
+              <div className="popupContent">
+                <h3>Cadastrar E-mail:</h3>
+                <form className="formCadastro" onSubmit={handleSubmit}>
+                  <label>
+                    Nome Completo:
+                    <input type="text" name="nomeCompleto" required />
+                  </label>
+                  <label>
+                    E-mail:
+                    <input type="email" name="email" value={emails} readOnly required />
+                  </label>
+                  <label>
+                    Senha:
+                    <input type="password" name="senha" required />
+                  </label>
+                  <label>
+                    Ano de Nascimento:
+                    <input type="text" name="anoNascimento" required />
+                  </label>
+                  <label>
+                    CPF:
+                    <input type="text" name="cpf" />
+                  </label>
+                  <label>
+                    Celular:
+                    <input type="text" name="celular" required />
+                  </label>
+                  <input type="submit" value="Cadastrar" />
+                </form>
+                <button onClick={handleClosePopup}>Fechar</button>
+              </div>
+            </div>
+          )}
+
+          
+          {cadastroConfirmado && (
+            <div className="cadastroConf">
+              <h3>Cadastro Confirmado!</h3>
+              <button onClick={handleClosePopup}>Fechar Mensagem</button>
+            </div>
+          )}
+        </div>
+      )}
+      {secaoAtual === 'logado' && (
         <div className="logado">
           <img src="Logado.png" alt="Foto de Perfil" />
           <h1>Olá, Fulano!</h1>
@@ -163,3 +180,4 @@ function Perfil() {
 }
 
 export default Perfil;
+
