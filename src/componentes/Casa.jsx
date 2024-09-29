@@ -145,7 +145,9 @@ function Casa() {
       altText: 'Nike Dior',
       title: 'Nike Dior',
       estrela: '★★★★★',
+      apartir: 'A partir de',
       preco: 'R$ 3499,99',
+      vezes: 'ou 6x R$291,50',
       descricao: 'Fazendo a ponte entre roupas esportivas prontas para a rua e moda de luxo, o Dior x Air Jordan 1 High.'
     },
     {
@@ -154,7 +156,9 @@ function Casa() {
       altText: 'Nike Shane',
       title: 'Nike Shane',
       estrela: '★★★★★',
+      apartir: 'A partir de',
       preco: 'R$ 807,00',
+      vezes: 'ou 5x R$161,40',
       descricao: 'Shane ONeill colocou a mesma atenção aos detalhes em todos os aspectos de seu tênis conceito, da mesma forma como coloca em suas manobras impossíveis.'
     },
     {
@@ -163,7 +167,9 @@ function Casa() {
       altText: 'Nike Air Jordan',
       title: 'Nike Air Jordan',
       estrela: '★★★★☆',
+      apartir: 'A partir de',
       preco: 'R$ 350,00',
+      vezes: 'ou 4x R$87,50',
       descricao: 'Inspirado no original que estreou em 1985, o Air Jordan 1 Low oferece um visual clássico e limpo.'
     },
     {
@@ -172,7 +178,9 @@ function Casa() {
       altText: 'Adidas Spider',
       title: 'Adidas Spider',
       estrela: '★★★★☆',
+      apartir: 'A partir de',
       preco: 'R$ 1699,99',
+      vezes: 'ou 12x R$141,66',
       descricao: 'Fazendo a ponte entre o amigo da vizinhança e o melhor que a Adidas tem a oferecer, o Spider-Man x Adidas.'
     },
     {
@@ -181,7 +189,9 @@ function Casa() {
       altText: 'Nike Travis',
       title: 'Nike Travis',
       estrela: '★★★★★',
+      apartir: 'A partir de',
       preco: 'R$ 2000,00',
+      vezes: 'ou 6x R$333,50',
       descricao: 'O Air Jordan 1 Low Retro OG SP Travis Scott é a versão mais baixa do aclamado AJ1 High Travis Scott.'
     },
     {
@@ -190,7 +200,9 @@ function Casa() {
       altText: 'Adidas White',
       title: 'Adidas White',
       estrela: '★★★★★',
+      apartir: 'A partir de',
       preco: 'R$ 850,00',
+      vezes: 'ou 6x R$141,16',
       descricao: 'O Tênis Adidas Off White Masculino é para os que apreciam o visual clássico em suas produções urbanas, a marca traz o Tênis Adidas Off White.'
     }
   ];
